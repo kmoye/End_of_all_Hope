@@ -5,12 +5,12 @@ using System.Threading.Tasks;
 
 namespace End_of_all_Hope.Models
 {
-    public class Item
+    public class Screen
     {
-        public int ItemID { get; set; }
-
-        public int ItemTypeID { get; set; }
+        public int ScreenID { get; set; }
 
         public string Name { get; set; }
+
+        public string Description { get; set; }
     }
 }

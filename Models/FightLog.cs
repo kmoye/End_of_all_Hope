@@ -5,16 +5,12 @@ using System.Threading.Tasks;
 
 namespace End_of_all_Hope.Models
 {
-    public class User
+    public class FightLog
     {
         public int UserID { get; set; }
 
-        public string Name { get; set; }
+        public int ScreenEnemyID { get; set; }
 
-        public int Level { get; set; }
-
-        public int Exp { get; set; }
-
-        public int HP { get; set; }
+        public int DamageDone { get; set; }
     }
 }

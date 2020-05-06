@@ -5,12 +5,14 @@ using System.Threading.Tasks;
 
 namespace End_of_all_Hope.Models
 {
-    public class Item
+    public class Weapon
     {
         public int ItemID { get; set; }
 
-        public int ItemTypeID { get; set; }
+        public int Multiplier { get; set; }
 
-        public string Name { get; set; }
+        public int Die { get; set; }
+
+        public int Modifier { get; set; }
     }
 }

@@ -5,12 +5,10 @@ using System.Threading.Tasks;
 
 namespace End_of_all_Hope.Models
 {
-    public class Item
+    public class Consumable
     {
         public int ItemID { get; set; }
 
-        public int ItemTypeID { get; set; }
-
-        public string Name { get; set; }
+        public int Heals { get; set; }
     }
 }
