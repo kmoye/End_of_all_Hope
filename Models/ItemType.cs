@@ -7,12 +7,8 @@ namespace End_of_all_Hope.Models
 {
     public class ItemType
     {
-        public int ItemID { get; set; }
+        public int ItemTypeID { get; set; }
 
-        public ItemType Weapon { get; set; }
-
-        public ItemType Consumable { get; set; }
-
-        public ItemType Key { get; set; }
+        public string ItemType { get; set; }
     }
 }
