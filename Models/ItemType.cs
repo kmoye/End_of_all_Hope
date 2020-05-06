@@ -9,6 +9,6 @@ namespace End_of_all_Hope.Models
     {
         public int ItemTypeID { get; set; }
 
-        public string ItemType { get; set; }
+        public string Type { get; set; }
     }
 }

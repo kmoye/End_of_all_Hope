@@ -7,6 +7,7 @@ namespace End_of_all_Hope.Models
 {
     public class InventoryItem
     {
+        public int InventoryItemID { get; set; }
         public int UserID { get; set; }
 
         public int ItemID { get; set; }

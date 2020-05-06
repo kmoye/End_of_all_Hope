@@ -7,6 +7,7 @@ namespace End_of_all_Hope.Models
 {
     public class FightLog
     {
+        public int FightLogID { get; set; }
         public int UserID { get; set; }
 
         public int ScreenEnemyID { get; set; }

@@ -7,6 +7,7 @@ namespace End_of_all_Hope.Models
 {
     public class Consumable
     {
+        public int ConsumableID { get; set; }
         public int ItemID { get; set; }
 
         public int Heals { get; set; }

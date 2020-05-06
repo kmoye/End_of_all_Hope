@@ -7,6 +7,7 @@ namespace End_of_all_Hope.Models
 {
     public class Weapon
     {
+        public int WeaponID { get; set; }
         public int ItemID { get; set; }
 
         public int Multiplier { get; set; }

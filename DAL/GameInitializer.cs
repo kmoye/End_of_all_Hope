@@ -75,9 +75,9 @@ namespace End_of_all_Hope.DAL
 
 				var itemType = new List<ItemType>
 				{
-					new ItemType { ItemTypeID=1, ItemType="Weapon" },
-					new ItemType { ItemTypeID=2, ItemType="Consumable" },
-					new ItemType { ItemTypeID=3, ItemType="Key" }
+					new ItemType { ItemTypeID=1, Type="Weapon" },
+					new ItemType { ItemTypeID=2, Type="Consumable" },
+					new ItemType { ItemTypeID=3, Type="Key" }
 				};
 
 				itemType.ForEach(s => context.ItemTypes.Add(s));
