@@ -9,8 +9,8 @@ namespace End_of_all_Hope.Models
 	public class UserItem
 	{
 		[Key]
-		public int Id { get; set; }
-		public int UserId { get; set; }
-		public int ItemId { get; set; }
+		public int UserItemID { get; set; }
+		public int UserID { get; set; }
+		public int ItemID { get; set; }
 	}
 }

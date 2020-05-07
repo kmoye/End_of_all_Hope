@@ -12,23 +12,30 @@ namespace End_of_all_Hope.Controllers
 {
 	public class HomeController : Controller
 	{
-		private GameContext db;
-		private readonly ILogger<HomeController> _logger;
+		private readonly GameContext _context;
 
-		public HomeController(ILogger<HomeController> logger, GameContext gameContext)
+		public HomeController(GameContext context)
 		{
-			_logger = logger;
+			_context = context;
 		}
 
 		public IActionResult Index()
 		{
-			ViewData["users"] = db.Users.ToList();
-
-			return View(ViewData);
-		}
-
-		public IActionResult Privacy()
-		{
+			var UserId = 1;
+			ViewBag.Items = _context.Items
+				.Join(
+					_context.UserItems,
+					i => i.ItemID,
+					ui => ui.ItemID,
+					(i, ui) => new
+					{
+						ItemID = ui.ItemID,
+						ItemTypeID = i.ItemTypeID,
+						UserID = ui.UserID,
+						Name = i.Name
+					})
+				.Where(ui => ui.UserID == UserId)
+				.ToList();
 			return View();
 		}
 
