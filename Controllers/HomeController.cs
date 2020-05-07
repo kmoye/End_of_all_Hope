@@ -38,7 +38,7 @@ namespace End_of_all_Hope.Controllers
 				.ToList();
 			return View();
 		}
-
+		
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
