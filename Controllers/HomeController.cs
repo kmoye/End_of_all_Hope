@@ -10,32 +10,32 @@ using End_of_all_Hope.DAL;
 
 namespace End_of_all_Hope.Controllers
 {
-	public class HomeController : Controller
-	{
-		private GameContext db;
-		private readonly ILogger<HomeController> _logger;
+    public class HomeController : Controller
+    {
+        private GameContext db;
+        private readonly ILogger<HomeController> _logger;
 
-		public HomeController(ILogger<HomeController> logger, GameContext gameContext)
-		{
-			_logger = logger;
-		}
+        public HomeController(ILogger<HomeController> logger, GameContext gameContext)
+        {
+            _logger = logger;
+        }
 
-		public IActionResult Index()
-		{
-			ViewData["users"] = db.Users.ToList();
+        public IActionResult Index()
+        {
+            //ViewData["users"] = db.Users.ToList();
 
-			return View(ViewData);
-		}
+            return View(ViewData);
+        }
 
-		public IActionResult Privacy()
-		{
-			return View();
-		}
+        public IActionResult Privacy()
+        {
+            return View();
+        }
 
-		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-		public IActionResult Error()
-		{
-			return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-		}
-	}
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+    }
 }
