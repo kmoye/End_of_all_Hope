@@ -27,6 +27,21 @@ namespace End_of_all_Hope.Controllers
             return View(ViewData);
         }
 
+        public IActionResult Login()
+        {
+            return View(Login);
+        }
+
+        public IActionResult About()
+        {
+            return View(About);
+        }
+
+        public IActionResult Play()
+        {
+            return View(Gameplay);
+        }
+
         public IActionResult Privacy()
         {
             return View();
